@@ -7,12 +7,21 @@ body{
 	padding:0;
 	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
 }
-/*Navigation - jeg har har en den problemer med at få min menu til at lægge sig rigtig*/
+/*Navigation - jeg har har en den problemer med at få min menu til at lægge sig rigtig - den sidste dropdown lægger sig konskvent udenfor browseren - problemet er løst ved give div .nav en width og noget padding*/
+
 nav{
 	height: 150px;
 }
+#logo{
+	height: 100px;
+	width: 100px;
+	padding: 10px;
+}
 .nav{
-	float: right;
+	float:right;
+	width:500px; 
+	padding: 10px;
+
 }
 #projekt{
 	padding: 50px;
@@ -57,11 +66,25 @@ footer{
 	height: 200px;
 	background-color: white;
 }
+.footercontent{
+	color: #000000;
+    text-align: center;
+	padding: 75px;
+	
+}
+.footercontent a{
+	margin-top: 50px;
+	color: #000000;
+	border: thick solid black; 
+	height: 60px;
+}
+.footercontent a i{
+	font-size: 50px;
+}
 /* Forside styling */
 
 #homeimg{
 	height: 300px;
 	width: 600px;
-	margin:auto; 
 	
 }
