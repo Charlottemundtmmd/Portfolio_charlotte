@@ -6,6 +6,7 @@ body{
 	margin: 0;
 	padding:0;
 	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif';
+	font: 20px; 
 }
 /*Navigation - jeg har har en den problemer med at få min menu til at lægge sig rigtig - den sidste dropdown lægger sig konskvent udenfor browseren - problemet er løst ved give div .nav en width og noget padding*/
 
@@ -62,9 +63,16 @@ nav{
 main{
 	min-height: calc(100vh - 200px - 150px);
 }
+/*Fælles Content - styling*/
+.content{
+	width: 50%;
+	padding-left: 125px;
+	padding-bottom: 50px;
+}
 footer{
 	height: 200px;
 	background-color: white;
+	width: 100%
 }
 .footercontent{
 	color: #000000;
@@ -73,18 +81,33 @@ footer{
 	
 }
 .footercontent a{
-	margin-top: 50px;
-	color: #000000;
-	border: thick solid black; 
 	height: 60px;
+	width: 60px;
+	color:#000000;
+	border: thin solid black;
+	border-radius: 100%;
+	display: inline-block; 
+	text-align: center; 
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 .footercontent a i{
-	font-size: 50px;
+	font-size: 40px;
 }
 /* Forside styling */
-
+ 
 #homeimg{
-	height: 300px;
-	width: 600px;
+	height: 500px;
+	width: 1200px;
+	margin: auto;
+	padding-left:250px;
+	padding-bottom:50px;
+}
+/*CV side - styling*/
+#cv{
+	padding-left: 500px;
+}
+form{
+	float: right;
 	
 }
