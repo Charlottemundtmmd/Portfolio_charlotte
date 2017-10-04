@@ -63,18 +63,17 @@ nav{
 main{
 	min-height: calc(100vh - 200px - 150px);
 }
-/*Fælles Content - styling*/
-.content{
-	width: 50%;
-	padding-left: 125px;
-	padding-bottom: 50px;
-}
+
 footer{
 	height: 200px;
 	background-color: white;
-	width: 100%
+	width: 100%;
+	box-sizing: border-box;
+		
 }
 .footercontent{
+	box-sizing: border-box;
+	height: 200px;
 	color: #000000;
     text-align: center;
 	padding: 75px;
@@ -88,26 +87,141 @@ footer{
 	border-radius: 100%;
 	display: inline-block; 
 	text-align: center; 
-	margin-top: 50px;
-	margin-bottom: 50px;
+	/*margin-top: 50px;
+	margin-bottom: 50px; Footerne bliver meget mærkerlig når det her er på.*/
+	padding: 10px;
+	
 }
 .footercontent a i{
 	font-size: 40px;
+	padding: 10px;
 }
 /* Forside styling */
  
 #homeimg{
-	height: 500px;
+	height: 600px;
 	width: 1200px;
 	margin: auto;
 	padding-left:250px;
 	padding-bottom:50px;
 }
-/*CV side - styling*/
-#cv{
-	padding-left: 500px;
+/*CV side */
+#cvcontent{
+	width: 80%;
+	padding-left: 100px; 
+	margin: auto;
 }
-form{
-	float: right;
-	
+
+#cv{
+	padding-left: 100px;
+	padding-bottom: 100px;
+  	display: inline-block;
+  	text-align: justify;
+}
+#selpor{
+  	display: inline-block;
+  	text-align: justify;
+	float: left;
+}
+#selpor i{
+	line-height: 200%; 
+	font-size: 20px;
+}
+
+/*Projekt sider*/
+/*Projekt flow - 1*/
+#pf1{
+	width: 80%;
+	margin: auto;
+	padding-left: 250px;
+	padding-bottom: 100px;
+}
+#pf1 a{
+	text-decoration: none;
+	color: navy;
+}
+.pf1content{
+	width: 80%;
+}
+/*Projekt flow - 2*/
+
+/*Lærings sider*/
+
+.ler1og2{
+	width: 80%;
+	margin: auto;
+	padding-left: 250px;
+	padding-bottom: 100px;
+}
+.ler1og2 article{
+	width: 80%;
+}
+.ler1og2 a{
+	text-decoration: none;
+	color: navy;
+}
+/*Om mig side */
+#ommigcontent{
+	width: 80%; 
+	padding-left: 100px; 
+	margin: auto;
+}
+#omig{
+	padding-left: 100px;
+	padding-bottom: 100px;
+  	display: inline-block;
+  	text-align: justify;
+}
+#oselpor{
+	display: inline-block;
+  	text-align: justify;
+	float: left;
+}
+
+/* kontakt side - hjælp fra w3schools*/
+
+/* styling på inputs og textarea */
+input[type=text], textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+}
+input[type=email]{
+	width: 100%; 
+    padding: 12px;   
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+}
+
+/* styling knap  */
+input[type=submit] {
+    background-color: #F2D4D7;
+    color: black;
+    padding: 12px 20px;
+    border: 1px thin #FFD0D1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* hover knap */
+input[type=submit]:hover {
+    background-color: #FFD0D1;
+}
+
+/* styling af container div */
+.container {
+    border-radius: 5px;
+    background-color: #F2D4D7;
+    padding: 20px;
+	width: 80%;
+	margin: auto;
 }
