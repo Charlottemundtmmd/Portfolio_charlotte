@@ -5,13 +5,14 @@
 <title>Kontakt</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- linket til fontawesome -->
 <link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="icon" href="../img/logo.png">
 </head>
 <body>
 <header> 
 <!-- Logo -->
 
 <nav>
-<a href="../index.html"><img src="../img/logo0,25x.png" id="logo"></a><!-- Jeg har lagt logo i nav fordi det jo i sin skjulte form er en del af navigation--> 
+<a href="../index.html"><img src="../img/logo0,25x.png" id="logo" alt="logo"></a><!-- Jeg har lagt logo i nav fordi det jo i sin skjulte form er en del af navigation--> 
 <div class="nav">
 <!-- Kode hjælp W3school-->
 <div class="dropdown" id="projekt">
@@ -41,7 +42,7 @@
 </header>
 <main>
  <div class="container"> <!-- den er ikke funktions dygtig endnu, den sender bare tilbage forsiden jeg arbejder forsat på at få den funktions dygtig men jeg kan altså ikke php endnu så den åbner altså lige nu bare mail programmen på computeren -->
-  <form action="mailto:charlottemundt@gmail.com?subject=Sending my Form!" method="post" enctype="text/plain">
+  <form action="mailto:charlottemundt@gmail.com?subject=Sending my Form!" method="post" enctype="text/plain"> <!--Validator siger bad character men hvordan gør vi jeg ikke må det-->
 
     <label for="fname">Navn</label>
     <input type="text" id="fname" name="firstname" placeholder="Dit navn..">
